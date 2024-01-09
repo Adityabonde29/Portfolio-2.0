@@ -1,0 +1,131 @@
+@font-face {
+    font-family: neu;
+    src: url(../src/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(../src/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+#nav {
+    padding: 2vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img {
+    height: 4vw;
+}
+
+#navright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+#navright h4 {
+    padding: 0.65vw 1.3vw;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 6.66vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#navright h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+#navright h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#navright h4 a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.700);
+    font-weight: 500;
+    font-size: 2.4vh;
+    position: relative;
+    z-index: 9;
+}
+
+#navright h4:hover a {
+    color: #EFEAE3;
+}
+
+#center {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#center img {
+    height: 100%;
+    border-radius: 6.66vh;
+}
+
+#superman {
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    background-image: linear-gradient(to top left, #FE380C , #fe850c);
+    padding: 1vw 2vw;
+    border-radius: 3.33vh;
+}
+
+#superman h4 {
+    color: #EFEAE3;
+    font-size: 2.66vh;
+}
+
+#superman2 {
+    position: absolute;
+    top: 8%;
+    left: 18%;
+}
+
+#superman2 p {
+    font-size: 2.133vh;
+    margin: 1vh 0;
+}
+#superman2 p , a {
+    color:#EFEAE3
+}
+
+#superman2 a {
+    text-decoration: none;
+}
